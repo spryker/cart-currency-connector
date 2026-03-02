@@ -33,11 +33,6 @@ class CartCurrencyConnectorToCartClientBridge implements CartCurrencyConnectorTo
         return $this->cartClient->getQuote();
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\CurrencyTransfer $currencyTransfer
-     *
-     * @return \Generated\Shared\Transfer\QuoteResponseTransfer
-     */
     public function setQuoteCurrency(CurrencyTransfer $currencyTransfer): QuoteResponseTransfer
     {
         return $this->cartClient->setQuoteCurrency($currencyTransfer);

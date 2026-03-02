@@ -12,9 +12,6 @@ use Spryker\Client\Kernel\AbstractFactory;
 
 class CartCurrencyConnectorFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\CartCurrencyConnector\Dependency\Client\CartCurrencyConnectorToCartClientInterface
-     */
     public function getCartClient(): CartCurrencyConnectorToCartClientInterface
     {
         return $this->getProvidedDependency(CartCurrencyConnectorDependencyProvider::CLIENT_CART);

@@ -17,10 +17,5 @@ interface CartCurrencyConnectorToCartClientInterface
      */
     public function getQuote();
 
-    /**
-     * @param \Generated\Shared\Transfer\CurrencyTransfer $currencyTransfer
-     *
-     * @return \Generated\Shared\Transfer\QuoteResponseTransfer
-     */
     public function setQuoteCurrency(CurrencyTransfer $currencyTransfer): QuoteResponseTransfer;
 }
